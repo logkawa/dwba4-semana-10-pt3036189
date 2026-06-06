@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Courses</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="header/header.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" href="footer/footer.css">
+</head>
+<div id="topo"></div>
+
+<body>
+    <h1>Análise e Desenvolvimento de Sistemas</h1>
+    <p>O curso de Análise e Desenvolvimento de Sistemas (ADS) tem como objetivo formar profissionais capacitados para
+        projetar, desenvolver, testar e manter sistemas computacionais. Durante a formação, o estudante aprende
+        conceitos de programação, banco de dados, engenharia de software e desenvolvimento web, além de adquirir
+        habilidades para resolver problemas e criar soluções tecnológicas eficientes. Ao final do curso, o profissional
+        está preparado para atuar no desenvolvimento de sistemas para diferentes áreas e demandas do mercado.</p>
+</body>
+<div id="footer"></div>
+<script>
+fetch("header/header.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("topo").innerHTML = data;
+  });
+  fetch("footer/footer.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script>
+</html>
